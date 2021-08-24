@@ -6,4 +6,4 @@ These are practice assignments for CMPS 150 at _The University of Louisiana at L
 All code was created using IDEA Community Edition in addition to it's Python Plugin.
 
 # workspace setup
-To easily download the source code: git clone https://github.com/broulf/pythonexercises.git and open the directory in your favourite IDE (VSCode, Eclipse, IDEA, etc)
+To easily download the source code: `git clone https://github.com/broulf/pythonexercises.git` and open the directory in your favourite IDE (VSCode, Eclipse, IDEA, etc)
