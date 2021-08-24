@@ -1,5 +1,2 @@
-print("Welcome to Python")
-print("Welcome to Python")
-print("Welcome to Python")
-print("Welcome to Python")
-print("Welcome to Python")
+for i in range(5):
+    print("Welcome to Python")
