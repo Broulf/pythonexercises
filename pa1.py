@@ -13,22 +13,30 @@
 # Certification of Authenticity:
 # I certify that this assignment is entirely my own work.
 
-import math as m
-
 # Asks the user for needed inputs
 make_model = input("Enter the make and model of the vehicle: ")
-tire_diameter = input(eval("Enter the tire diameter (inches): "))
-distance_traveled = input(eval("Enter the distance traveled (miles): "))
-average_speed = input(eval("Enter the average driving speed in mph: "))
+tire_diameter = eval(input("Enter the tire diameter (inches): "))
+distance_traveled = eval(input("Enter the distance traveled (miles): "))
+average_speed = eval(input("Enter the average driving speed in mph: "))
 
-tire_circumfrence = tire_diameter * m.pi
+# Calculations for all needed values
+tire_circumfrence = tire_diameter * 3.1416
 distance_traveled_inches = distance_traveled * 5280 * 12
-tire_rotations = distance_traveled_inches / tire_circumfrence
-travel_hours = distance_traveled / average_speed
+tire_rotations_exact = distance_traveled_inches / tire_circumfrence
+tire_rotations_approx = distance_traveled_inches // tire_circumfrence
+travel_hours = format(distance_traveled / average_speed , ".3f")
 
-print("Summary of travel information for", make_model, ":")
+# Shows the Summary
+print("\nSummary of travel information for", make_model, ":")
 print(49 * "-")
 print("Tire size:", tire_diameter, "inches")
 print("Tire circumfrence:", tire_circumfrence, "inches")
-print("Distance traveled:", distance_traveled, "miles", "(", distance_traveled_inches, ")")
+print("Distance traveled:", distance_traveled, "miles", "(", distance_traveled_inches, "inches", ")")
 print("Speed traveled: ", average_speed, "mph")
+
+# Shows the Tire Rotation information
+print("\nNumber of Tire Rotations:")
+print(49 * "-")
+print("\tExact:", tire_rotations_exact)
+print("\tApprox:", tire_rotations_approx)
+print("\nIt will take", travel_hours, "hours to travel", distance_traveled, "miles")
