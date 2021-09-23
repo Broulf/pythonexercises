@@ -1,4 +1,4 @@
-# Author:          Anthoyn Segura
+# Author:          Anthony Segura
 # ULID:            C00441031
 # Course/Section:  CMPS 150 – 002
 # Assignment:      pa2
@@ -33,8 +33,8 @@ print("Total Plants:", format(total_plants_rectangular, '>7'))
 # Triangular Calculations
 row_spacing = plant_spacing * .866
 number_plants_odd = area_length // plant_spacing
-number_plants_even = (area_length - (plant_spacing * 0.5)) // plant_spacing
-total_rows = ((area_width - plant_spacing) // plant_spacing) + 1
+number_plants_even = (area_length - plant_spacing * 0.5) // plant_spacing
+total_rows = ((area_width - plant_spacing) // row_spacing) + 1
 number_even_rows = total_rows // 2
 number_odd_rows = total_rows - number_even_rows
 total_plants_triangular = (number_plants_odd * number_odd_rows) + (number_plants_even * number_even_rows)
