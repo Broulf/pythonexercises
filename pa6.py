@@ -104,5 +104,7 @@ def main():
         format(format(total_hospitality, '.2f'), '>3s'),
         "\n"
         )
+    
+    infile.close()
 
 main()
