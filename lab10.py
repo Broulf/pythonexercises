@@ -15,7 +15,7 @@ def main():
     job = infile.readline().strip()
     num = eval(infile.readline().strip())
 
-    # initialize any needed variables (maximums)
+    # base prices
     trim_hour = 80
     removal = 500
 
