@@ -3,7 +3,7 @@ Python Exercise Source Code from the book: _Introduction to Programming Using Py
 
 These are practice assignments for CMPS 150 at _The University of Louisiana at Lafayette_.
 
-All code was created using IDEA Community Edition in addition to it's Python Plugin.
+All code was created using IDEA Community Edition or VSCode in addition to their Python Plugins.
 
 # workspace setup
 To easily download the source code: `git clone https://github.com/broulf/pythonexercises.git` and open the directory in your favourite IDE (VSCode, Eclipse, IDEA, etc)
