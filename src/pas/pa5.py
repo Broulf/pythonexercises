@@ -12,8 +12,8 @@
 # Certification of Authenticity: 
 # I certify that this assignment is entirely my own work. 
 
-#infile = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/assignments/ISBNdata.txt","r")
-infile = open("ISBNdata.py","r")
+infile = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/assignments/ISBNdata.txt","r")
+#infile = open("ISBNdata.py","r")
 
 isbn_number = infile.readline().strip()
 

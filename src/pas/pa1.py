@@ -24,19 +24,27 @@ tire_circumfrence = tire_diameter * 3.1416
 distance_traveled_inches = distance_traveled * 5280 * 12
 tire_rotations_exact = distance_traveled_inches / tire_circumfrence
 tire_rotations_approx = distance_traveled_inches // tire_circumfrence
-travel_hours = format(distance_traveled / average_speed , ".3f")
+travel_hours = format(distance_traveled / average_speed, ".3f")
 
-# Shows the Summary
+# Shows the Summary information
 print("\nSummary of travel information for", make_model, ":")
 print(49 * "-")
 print("Tire size:", tire_diameter, "inches")
 print("Tire circumfrence:", tire_circumfrence, "inches")
-print("Distance traveled:", distance_traveled, "miles", "(", distance_traveled_inches, "inches", ")")
+print(
+    "Distance traveled:",
+    distance_traveled,
+    "miles",
+    "(",
+    distance_traveled_inches,
+    "inches",
+    ")",
+)
 print("Speed traveled: ", average_speed, "mph")
 
 # Shows the Tire Rotation information
 print("\nNumber of Tire Rotations:")
 print(49 * "-")
-print("\tExact:", tire_rotations_exact)
-print("\tApprox:", tire_rotations_approx)
+print("   Exact: ", tire_rotations_exact)
+print("   Approx:", tire_rotations_approx)
 print("\nIt will take", travel_hours, "hours to travel", distance_traveled, "miles")

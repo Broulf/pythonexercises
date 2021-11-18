@@ -62,7 +62,7 @@ def main():
             cable = deluxe_cable * num_days
             if cable < 300:
                 total_cable += cable
-            if cable > 300:
+            elif cable > 300:
                 cable = 300.00
                 total_cable += cable
         elif cable == "N":
@@ -73,7 +73,7 @@ def main():
             hospitality = hospitality_charge * num_days
             if hospitality < 300:
                 total_hospitality += hospitality
-            if hospitality > 300:
+            elif hospitality > 300:
                 hospitality = 300.00
                 total_hospitality += hospitality
         else:

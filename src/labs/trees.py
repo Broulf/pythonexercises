@@ -1,0 +1,15 @@
+TRIM
+7
+TRIM
+2
+REMOVE
+3
+TRIM
+24
+REMOVE
+5
+TRIM
+5
+###
+0
+
