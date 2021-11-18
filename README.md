@@ -1,4 +1,4 @@
-# pythonexercises
+# ULL CMPS 150 EXERCISES
 Python Exercise Source Code from _The University of Louisiana at lafayette_ CMPS 150, all source is created by me, Broulf / Anthony Segura.
 
 These are practice assignments for CMPS 150 at _The University of Louisiana at Lafayette_.
