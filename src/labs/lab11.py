@@ -13,12 +13,12 @@ def VolumeSphere(radius):
     return volume
 
 def SurfaceAreaCube(length):
-    surfaceArea = 6 * length ** 2
-    return surfaceArea
+    surface_area = 6 * length ** 2
+    return surface_area
 
 def SurfaceAreaSphere(radius):
-    surfaceArea = 4 * math.pi * radius ** 2
-    return surfaceArea
+    surface_area = 4 * math.pi * radius ** 2
+    return surface_area
 
 def main():
 
