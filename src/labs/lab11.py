@@ -1,51 +1,54 @@
-# Author:         Your-Name
-# ULID/Section:   Your-ULID & section-number go here
+# Author:         Anthony Segura
+# ULID/Section:   C00441031 - 002
 # lab11.py 
  
 import math
 
-def AC(radius):
+def AreaCircle(radius):
     area = math.pi * radius ** 2
     return area 
- 
-# WRITE ALL THE OTHER FUNCTIONS 
- 
- 
- 
- 
- 
+
+def VolumeSphere(radius):
+    volume = 4/3 * math.pi * radius ** 3
+    return volume
+
+def SurfaceAreaCube(length):
+    surfaceArea = 6 * length ** 2
+    return surfaceArea
+
+def SurfaceAreaSphere(radius):
+    surfaceArea = 4 * math.pi * radius ** 2
+    return surfaceArea
+
 def main():
 
     infile = open("lab11_input.py","r")
 
-    # get first calculation type,
-    # but wait on dimension(s) because number of dimensions
-    # is dependent on type of shape
-
-    type = infile.readline().strip()
+    input_type = infile.readline().strip()
     dimension = eval(infile.readline().strip())
 
-    while (type != "###"): 
+    while input_type != "###": 
 
-        if (type == "AC"):
-
-            # call the function AC and pass radius as a parameter
-            # the return value from the function AC will be stored in circleArea
-
-            circleArea = AC(dimension)
-            print(format("Area of a Circle","30s"),format(circleArea,"15.2f"))
- 
+        if input_type == "AC":
+            circle_area = AreaCircle(dimension)
+            print(format("Area of a Circle","30s"),format(circle_area,"15.2f"))
 
         # do the processing for all other types of calculations 
-        elif 
+        elif input_type == "VS":
+            sphere_volume = VolumeSphere(dimension)
+            print(format("Volume of a Sphere","30s"),format(sphere_volume,"15.2f"))
  
- 
-        # get next calculation type
-        type = infile.readline().strip()
+        elif input_type == "SAC":
+            cube_surface = SurfaceAreaCube(dimension)
+            print(format("Surface Area of a Cube","30s"),format(cube_surface,"15.2f"))
+
+        elif input_type == "SAS":
+            sphere_surface = SurfaceAreaSphere(dimension)
+            print(format("Surface Area of a Sphere","30s"),format(sphere_surface,"15.2f"))
+
+        input_type = infile.readline().strip()
         dimension = eval(infile.readline().strip())
 
-
-    # close the file when you exit the while loop 
     infile.close()
     
 main() 
