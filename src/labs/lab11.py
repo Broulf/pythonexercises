@@ -22,7 +22,7 @@ def SurfaceAreaSphere(radius):
 
 def main():
 
-    infile = open("lab11_input.py","r")
+    infile = open("lab11_input.txt","r")
 
     input_type = infile.readline().strip()
     dimension = eval(infile.readline().strip())
@@ -32,16 +32,12 @@ def main():
         if input_type == "AC":
             circle_area = AreaCircle(dimension)
             print(format("Area of a Circle","30s"),format(circle_area,"15.2f"))
-
-        # do the processing for all other types of calculations 
         elif input_type == "VS":
             sphere_volume = VolumeSphere(dimension)
             print(format("Volume of a Sphere","30s"),format(sphere_volume,"15.2f"))
- 
         elif input_type == "SAC":
             cube_surface = SurfaceAreaCube(dimension)
             print(format("Surface Area of a Cube","30s"),format(cube_surface,"15.2f"))
-
         elif input_type == "SAS":
             sphere_surface = SurfaceAreaSphere(dimension)
             print(format("Surface Area of a Sphere","30s"),format(sphere_surface,"15.2f"))

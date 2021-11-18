@@ -14,8 +14,7 @@
 def main():
 
     # open the file
-    #infile = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/assignments/hospital.py", 'r')
-    infile = open("hospital.py", 'r')
+    infile = open("hospital.txt", 'r')
 
     # print the header
     print(

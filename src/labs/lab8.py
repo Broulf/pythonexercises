@@ -3,10 +3,7 @@
 # Lab #8
 
 # works in idle, but not my VSCode or PyCharm
-infile = open("fuel.py","r")
-
-# this line is only for when I'm using VSCode or PyCharm, otherwise, ignore.
-#infile = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/labs/fuel.py","r")
+infile = open("fuel.txt","r")
 
 # read initial data
 fuel_type = infile.readline().strip()

@@ -3,9 +3,9 @@
 # Lab #10
 
 def main():
+    
     # open the file
-    #infile = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/labs/trees2.py", 'r')
-    infile = open("trees.py", 'r')
+    infile = open("trees.txt", 'r')
 
     # print the column headings
     print("\nJob Type   Hrs/Trees    Cost")
