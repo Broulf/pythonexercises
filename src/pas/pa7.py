@@ -32,8 +32,8 @@ def main():
 
     # Storage Values!!!
     correct = 0
-    correct_list = []
     incorrect = 0
+    correct_list = []
     incorrect_list = []
     true_answers = 0
     false_answers = 0
