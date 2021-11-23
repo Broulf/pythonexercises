@@ -55,7 +55,7 @@ def main():
         elif student_list[i] == "F":
             false_answers += 1
     
-    # Compares the stored values and stores the most common answer
+    # Compares the stored values and stores the most common answer type(s)
     if true_answers > false_answers:
         most_common = "T"
     elif false_answers > true_answers:
@@ -63,10 +63,10 @@ def main():
     elif true_answers == false_answers:
         most_common = "T and F"
 
-    # Grades the student
+    # Calculates the percentage grade of the student
     grade = (correct / (correct + incorrect)) * 100
 
-    # Letter grades
+    # Defines the percentage to a letter grade
     if grade >= 90:
         grade_letter = "A"
     elif grade >= 80:
