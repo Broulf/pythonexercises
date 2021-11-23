@@ -69,13 +69,13 @@ def main():
     # Defines the percentage to a letter grade
     if grade >= 90:
         grade_letter = "A"
-    elif grade >= 80:
+    elif grade >= 80 and grade < 90:
         grade_letter = "B"
-    elif grade >= 70:
+    elif grade >= 70 and grade < 80:
         grade_letter = "C"
-    elif grade >= 60:
+    elif grade >= 60 and grade < 70:
         grade_letter = "D"
-    else:
+    elif grade < 60:
         grade_letter = "F"
 
     # Uses the required header
