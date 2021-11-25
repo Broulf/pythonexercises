@@ -5,19 +5,16 @@ import random
 def main():
     #infile = open("/home/broulf/Documents/VSCodeProjects/lab12/numbers.py", "r")
     infile = open("numbers.py", "r")
-
     num = eval(infile.readline().strip())
 
     num_list = []
-
     randomint = 0
+    randomint = random.randint(1, 25)
 
     while num != 0:
         #print(num)
         num_list.append(num)
         num = eval(infile.readline().strip())
-
-    randomint = random.randint(1, 25)
 
     print("List =", num_list)
     print("Length of list =", len(num_list))
