@@ -17,10 +17,10 @@ from PrintAnswerHeader import PrintAnswerHeader
 def main():
 
     # Opens the files
-    key_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/key.txt", "r")
-    student_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/studentAnswers.txt", "r")
-    #key_file = open("key.py", "r")
-    #student_file = open("studentAnswers.py", "r")
+    #key_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/key.txt", "r")
+    #student_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/studentAnswers.txt", "r")
+    key_file = open("key.py", "r")
+    student_file = open("studentAnswers.py", "r")
 
     # Lists
     key_list = key_file.read().splitlines()
@@ -92,5 +92,7 @@ def main():
     print("\nThe student's average is", grade, "%.")
     print("The student's letter grade is:", grade_letter)
     print("\n")
+
+    infile.close()
 
 main()
