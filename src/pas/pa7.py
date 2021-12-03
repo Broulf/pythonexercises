@@ -93,6 +93,7 @@ def main():
     print("The student's letter grade is:", grade_letter)
     print("\n")
 
-    infile.close()
-
+    key_file.close()
+    student_file.close()
+    
 main()
