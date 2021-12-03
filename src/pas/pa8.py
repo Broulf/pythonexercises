@@ -21,12 +21,15 @@ def createStringList(list, file, sen):
         list.remove(sen)
         return list
 
+def PrintListOnSingleLine(list):
+        return(list)
+
 def main():
 
-    #key_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/key.py", "r")
-    #student_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/studentAnswersPA8.py", "r")
-    key_file = open("key.py", "r")
-    student_file = open("studentAnswers.py", "r")
+    key_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/key.py", "r")
+    student_file = open("C:/Users/Anthony/Desktop/Stoof/CMPS 150/pythongit/src/pas/studentAnswersPA8.py", "r")
+    #key_file = open("key.py", "r")
+    #student_file = open("studentAnswers.py", "r")
 
     # Create a list to hold the key
     key_list = []
@@ -100,9 +103,9 @@ def main():
             grade_letter = "F"
 
         # Prints the results
-        print("CORRECT answers: #", *correct_list)
+        print("CORRECT answers: #", *PrintListOnSingleLine(correct_list))
         print("Number correct: ", correct)
-        print("\nWRONG answers: #", *incorrect_list)
+        print("\nWRONG answers: #", *PrintListOnSingleLine(incorrect_list))
         print("Number wrong: ", incorrect)
         print("\nThe student has", true_answers, "True answers.")
         print("The student has", false_answers, "False answers.")
